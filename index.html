@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ein Tag in Sydney – 11:00 bis 21:00</title>
-<meta name="description" content="Ein durchgeplanter Tag in Sydney: acht Stationen von Woolloomooloo bis Vivid Sydney, mit Infos, Zeiten und Wegen.">
+<title>A Day in Sydney – 11:00 AM to 9:00 PM</title>
+<meta name="description" content="A fully planned day in Sydney: eight stops from Woolloomooloo to Vivid Sydney, with details, times, and routes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,300&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@ a{color:inherit}
 
 .wrap{width:min(1120px,92vw);margin:0 auto}
 
-/* ---------- Sticky Tagesleiste ---------- */
+/* ---------- Sticky Bar ---------- */
 .bar{
   position:fixed;inset:0 0 auto 0;z-index:60;
   display:flex;align-items:center;gap:1rem;
@@ -159,17 +159,9 @@ h1 .line:nth-child(2) span{animation-delay:.12s}
 .finale{position:relative;padding:7rem 0 5rem;color:#EAF2F8;overflow:hidden;background:linear-gradient(180deg,rgba(10,18,48,0),var(--night) 22%,#060A1C)}
 .finale h2{font-size:clamp(2.2rem,1rem + 6vw,5.5rem);font-weight:800;letter-spacing:-.03em}
 .finale p{max-width:var(--measure);color:#B9CBDC}
-.beams{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.85}
-.finale .wrap{position:relative;z-index:2}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:3rem}
-.gallery figure{margin:0;border:1px solid rgba(226,59,190,.25);border-radius:8px;overflow:hidden;background:#0A1230}
-.gallery svg{display:block;width:100%;height:auto}
-.gallery figcaption{padding:.6rem .8rem;font-size:.8rem;color:#9FB8CC;font-family:"Bricolage Grotesque",sans-serif}
 
 footer{background:#060A1C;color:#7E93A8;padding:3rem 0 4rem;font-size:.88rem}
 footer .wrap{display:grid;gap:1rem}
-footer a{color:#B9CBDC}
-kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;background:rgba(255,255,255,.07);padding:.1rem .35rem;border-radius:4px}
 
 :focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:3px}
 
@@ -184,7 +176,7 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
 
 <div class="bar">
   <span class="clock" id="clock">11:00</span>
-  <span class="now" id="now">Erster Halt: Woolloomooloo</span>
+  <span class="now" id="now">First stop: Woolloomooloo</span>
   <span class="track"><span class="fill" id="fill"></span></span>
 </div>
 
@@ -201,7 +193,7 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       <clipPath id="seaclip"><rect x="0" y="392" width="1440" height="168"/></clipPath>
     </defs>
 
-    <!-- Sonne -->
+    <!-- Sun -->
     <circle cx="1120" cy="150" r="46" fill="#FFD9A8" opacity=".9">
       <animate attributeName="cy" values="150;140;150" dur="12s" repeatCount="indefinite"/>
     </circle>
@@ -232,7 +224,7 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       <rect x="1290" y="296" width="44" height="96"/>
     </g>
 
-    <!-- Wasser -->
+    <!-- Water -->
     <rect x="0" y="392" width="1440" height="168" fill="url(#sea)"/>
     <g clip-path="url(#seaclip)" stroke="rgba(255,255,255,.35)" stroke-width="2" fill="none">
       <path d="M-200 430 q40 -8 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0">
@@ -246,7 +238,7 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       </path>
     </g>
 
-    <!-- Fähre -->
+    <!-- Ferry -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="-260 0;1700 0" dur="34s" repeatCount="indefinite"/>
       <g transform="translate(0 440)">
@@ -259,19 +251,19 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   </svg>
 
   <div class="wrap">
-    <span class="kicker"><span class="dot"></span>Freitag, 11. September · Sydney, Australien</span>
+    <span class="kicker"><span class="dot"></span>Friday, September 11 · Sydney, Australia</span>
     <h1>
-      <span class="line"><span>Ein Tag,</span></span>
-      <span class="line"><span>acht Stopps.</span></span>
+      <span class="line"><span>One day,</span></span>
+      <span class="line"><span>eight stops.</span></span>
     </h1>
-    <p class="lede">Von der alten Werft in Woolloomooloo bis zu den leuchtenden Segeln bei Vivid Sydney –
-      zehneinhalb Stunden am Hafen, ohne Leerlauf und fast alles zu Fuß oder mit der Fähre.</p>
+    <p class="lede">From the old timber wharf in Woolloomooloo to the glowing sails at Vivid Sydney – 
+      ten and a half hours along the harbour, seamless, and almost entirely on foot or by ferry.</p>
     <div class="hero-meta">
-      <span class="badge">11:00 – 21:30 Uhr</span>
-      <span class="badge">rund 7 km Fußweg</span>
-      <span class="badge">4 Stopps mit freiem Eintritt</span>
+      <span class="badge">11:00 AM – 9:30 PM</span>
+      <span class="badge">approx. 7 km walk</span>
+      <span class="badge">4 stops with free admission</span>
     </div>
-    <div class="scroll-hint"><i></i>Scroll dich durch den Tag – der Himmel wandert mit.</div>
+    <div class="scroll-hint"><i></i>Scroll through the day – the sky changes as you go.</div>
   </div>
 </header>
 
@@ -279,19 +271,19 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
 <section class="intro">
   <div class="wrap intro-grid">
     <div>
-      <h2>Der Plan</h2>
-      <p>Die Route bleibt den ganzen Tag am Wasser. Sie startet östlich des Stadtzentrums in Woolloomooloo,
-        läuft über Circular Quay mit Museum und Opernhaus, macht am Nachmittag einen Bogen durch den
-        Botanischen Garten und endet nach dem Abendessen im Lichtermeer von Vivid Sydney.</p>
-      <p>Zwischen den Stopps liegen selten mehr als zwanzig Minuten. Wer langsamer unterwegs ist,
-        streicht den Nationalpark und bleibt länger im Garten – der Rest passt trotzdem.</p>
+      <h2>The Plan</h2>
+      <p>The route stays right along the waterfront all day. It begins east of the city centre in Woolloomooloo, 
+        loops through Circular Quay featuring the museum and Opera House, takes an afternoon detour through the 
+        Royal Botanic Garden, and ends after dinner in the illuminated spectacle of Vivid Sydney.</p>
+      <p>Between stops, you'll rarely walk for more than twenty minutes. If you prefer a slower pace, 
+        skip the national park and spend more time in the gardens – the rest of the itinerary still works perfectly.</p>
     </div>
     <dl class="facts">
-      <div><dt>Start</dt><dd>11:00 Uhr</dd></div>
-      <div><dt>Ende</dt><dd>21:30 Uhr</dd></div>
-      <div><dt>Stopps</dt><dd>8</dd></div>
-      <div><dt>Längste Pause</dt><dd>90 Min.</dd></div>
-      <div><dt>Bestes Licht</dt><dd>ab 17:00 Uhr</dd></div>
+      <div><dt>Start</dt><dd>11:00 AM</dd></div>
+      <div><dt>End</dt><dd>9:30 PM</dd></div>
+      <div><dt>Stops</dt><dd>8</dd></div>
+      <div><dt>Longest break</dt><dd>90 min</dd></div>
+      <div><dt>Best light</dt><dd>from 5:00 PM</dd></div>
     </dl>
   </div>
 </section>
@@ -304,8 +296,8 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   <article class="stop" data-time="11:00" data-title="Woolloomooloo">
     <div class="tick">11:00</div>
     <div class="card">
-      <div class="card-media" data-photo="images/woolloomooloo.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Finger Wharf in Woolloomooloo">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of Finger Wharf in Woolloomooloo">
           <rect width="640" height="360" fill="#BEE0EA"/>
           <rect y="235" width="640" height="125" fill="#2E8FA8"/>
           <g fill="#F4F0E6" stroke="#C9BEA8" stroke-width="2">
@@ -337,20 +329,19 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       </div>
       <div class="card-body">
         <h3>Woolloomooloo</h3>
-        <p class="where">Bucht östlich des Stadtzentrums · Startpunkt</p>
-        <p>Eine schmale Bucht mit einem sehr langen Holzsteg: Der Finger Wharf wurde zwischen 1911 und 1915
-          als Wollverladestelle gebaut und war lange einer der größten Holzpiers der Welt. Heute stecken darin
-          Wohnungen, ein Hotel und Restaurants – die alte Holzkonstruktion ist aber noch komplett sichtbar.</p>
-        <p>Am Landende steht seit 1938 der Imbisswagen Harry's Café de Wheels, berühmt für den „Pie Floater“:
-          eine Fleischpastete, die kopfüber in Erbsenpüree schwimmt. Klassisches erstes Frühstück für alle,
-          die mutig sind.</p>
+        <p class="where">Bay east of the city centre · Starting point</p>
+        <p>A narrow bay featuring a massive timber pier: Finger Wharf was built between 1911 and 1915 
+          for wool processing and was long one of the world's largest wooden structures. Today it houses 
+          apartments, a hotel, and restaurants, though the historic timber framework remains fully visible.</p>
+        <p>At the landward end sits Harry's Café de Wheels, a legendary food cart operating since 1938, famous for its 
+          "Pie Floater": a meat pie floating upside down in a bowl of pea soup. A classic first meal for the adventurous.</p>
         <dl class="detail">
-          <div><dt>Dauer</dt><dd>30 Minuten</dd></div>
-          <div><dt>Eintritt</dt><dd>frei</dd></div>
-          <div><dt>Weiter zum MCA</dt><dd>15 Min. zu Fuß über den Botanischen Garten oder die Art Gallery Road</dd></div>
+          <div><dt>Duration</dt><dd>30 minutes</dd></div>
+          <div><dt>Admission</dt><dd>Free</dd></div>
+          <div><dt>Next stop</dt><dd>15 min walk to the MCA via the Botanic Garden or Art Gallery Road</dd></div>
         </dl>
-        <div class="note">Der Name kommt aus der Sprache der Gadigal, der ersten Bewohner dieser Küste.
-          Die genaue Bedeutung ist bis heute nicht sicher belegt.</div>
+        <div class="note">The name originates from the language of the Gadigal people, the original custodians of this land. 
+          Its exact translation remains unconfirmed today.</div>
       </div>
     </div>
   </article>
@@ -359,8 +350,8 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   <article class="stop" data-time="11:30" data-title="Museum of Contemporary Art">
     <div class="tick">11:30</div>
     <div class="card">
-      <div class="card-media" data-photo="images/mca.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Museum of Contemporary Art">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of the Museum of Contemporary Art">
           <rect width="640" height="360" fill="#CBE4EC"/>
           <rect x="70" y="70" width="500" height="250" fill="#E8E0CE"/>
           <rect x="70" y="70" width="500" height="26" fill="#D6CAB2"/>
@@ -387,29 +378,27 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       </div>
       <div class="card-body">
         <h3>Museum of Contemporary Art</h3>
-        <p class="where">Circular Quay West, The Rocks · 90 Minuten</p>
-        <p>Australiens größtes Museum für zeitgenössische Kunst sitzt in einem Art-déco-Bau von 1952, der
-          ursprünglich der Hafenverwaltung gehörte. Seit 1991 hängt dort Kunst: über 4.000 Werke in der
-          Sammlung, mit einem Schwerpunkt auf Arbeiten von Aboriginal- und Torres-Strait-Islander-Künstlerinnen
-          und -Künstlern.</p>
-        <p>Die Dauerausstellung kostet nichts, nur große Sonderausstellungen haben ein Ticket. Wichtigster
-          Geheimtipp ist das Café auf der obersten Etage: Von der Terrasse schaut man direkt über die Fähranleger
-          auf das Opernhaus.</p>
+        <p class="where">Circular Quay West, The Rocks · 90 minutes</p>
+        <p>Australia’s premier museum dedicated to contemporary art is housed in a striking 1952 Art Deco building, 
+          formerly headquarters for the Maritime Services Board. Exhibiting art since 1991, its collection exceeds 
+          4,000 works with a strong emphasis on Aboriginal and Torres Strait Islander artists.</p>
+        <p>Entry to the permanent collection is free, though major temporary exhibitions require tickets. 
+          A highlight is the top-floor cafe: its outdoor terrace offers panoramic views across the ferry wharves to the Opera House.</p>
         <dl class="detail">
-          <div><dt>Öffnet</dt><dd>täglich ab 10:00 Uhr</dd></div>
-          <div><dt>Eintritt</dt><dd>Sammlung frei, Sonderausstellungen kostenpflichtig</dd></div>
-          <div><dt>Weiter</dt><dd>2 Min. zur Promenade am Circular Quay</dd></div>
+          <div><dt>Hours</dt><dd>Open daily from 10:00 AM</dd></div>
+          <div><dt>Admission</dt><dd>Free for general collection, ticketed for special exhibitions</dd></div>
+          <div><dt>Next stop</dt><dd>2 min walk to the Circular Quay foreshore</dd></div>
         </dl>
       </div>
     </div>
   </article>
 
   <!-- 3 -->
-  <article class="stop" data-time="14:00" data-title="Eispause am Hafen">
+  <article class="stop" data-time="14:00" data-title="Ice Cream Break at the Harbour">
     <div class="tick">14:00</div>
     <div class="card">
-      <div class="card-media" data-photo="images/harbour.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration einer Eispause am Hafen">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of an ice cream break by the harbour">
           <rect width="640" height="360" fill="#9FD8E8"/>
           <circle cx="520" cy="80" r="40" fill="#FFD9A8"/>
           <rect y="230" width="640" height="130" fill="#2E8FA8"/>
@@ -441,17 +430,17 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
         </svg>
       </div>
       <div class="card-body">
-        <h3>Eispause am Hafen</h3>
-        <p class="where">Circular Quay, zwischen Fähranlegern und Kai · 45 Minuten</p>
-        <p>Die längste Pause des Tages, und sie ist eingeplant: Nach fast drei Stunden Museum tut es gut,
-          sich mit einem Eis an die Kaimauer zu setzen und einfach den Fähren zuzusehen. Von hier fahren
-          die grün-gelben Boote im Minutentakt nach Manly, Taronga Zoo und Watsons Bay ab.</p>
-        <p>Im September ist es in Sydney Frühling, meist um die 20 Grad – warm genug fürs Eis, aber die
-          UV-Strahlung ist auch dann stark. Sonnencreme lohnt sich.</p>
+        <h3>Ice Cream Break at the Harbour</h3>
+        <p class="where">Circular Quay, between ferry wharves and promenade · 45 minutes</p>
+        <p>The longest scheduled break of the day: After nearly three hours in the museum, sit by the seawall 
+          with an ice cream and watch the bustling harbour traffic. Iconic green-and-yellow ferries depart constantly 
+          for Manly, Taronga Zoo, and Watsons Bay.</p>
+        <p>In September, Sydney enters spring with mild temperatures around 20°C (68°F) – ideal for ice cream, 
+          though UV levels remain high, so sun protection is recommended.</p>
         <dl class="detail">
-          <div><dt>Gut zu wissen</dt><dd>Die Möwen hier sind extrem dreist. Eis festhalten.</dd></div>
-          <div><dt>Bester Blick</dt><dd>östliche Promenade Richtung Opernhaus</dd></div>
-          <div><dt>Weiter</dt><dd>10 Min. am Wasser entlang zum Opernhaus</dd></div>
+          <div><dt>Good to know</dt><dd>Local seagulls are notorious thieves. Keep a firm grip on your ice cream!</dd></div>
+          <div><dt>Best view</dt><dd>Eastern promenade facing towards the Opera House</dd></div>
+          <div><dt>Next stop</dt><dd>10 min walk along the water to the Opera House</dd></div>
         </dl>
       </div>
     </div>
@@ -461,8 +450,8 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   <article class="stop" data-time="14:45" data-title="Sydney Opera House">
     <div class="tick">14:45</div>
     <div class="card">
-      <div class="card-media" data-photo="images/opera-house.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Sydney Opera House">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of the Sydney Opera House">
           <defs>
             <linearGradient id="sh2" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9D0BE"/>
@@ -491,20 +480,19 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       </div>
       <div class="card-body">
         <h3>Sydney Opera House</h3>
-        <p class="where">Bennelong Point · 30 Minuten außen, Führung 1 Stunde</p>
-        <p>Der dänische Architekt Jørn Utzon gewann 1957 den Wettbewerb, obwohl sein Entwurf zunächst
-          aussortiert worden war. Gebaut wurde bis 1973 – statt der geplanten vier Jahre und 7 Millionen
-          australischen Dollar wurden es sechzehn Jahre und 102 Millionen, finanziert über eine eigene Lotterie.</p>
-        <p>Auf den Dächern liegen rund 1.056.000 glasierte Fliesen aus Schweden, in zwei Weißtönen verlegt.
-          Deshalb wirkt das Dach je nach Sonnenstand cremig oder blendend hell. Seit 2007 gehört das Haus
-          zum UNESCO-Welterbe; drinnen finden jedes Jahr über 1.800 Veranstaltungen statt.</p>
+        <p class="where">Bennelong Point · 30 min exterior view, 1-hour guided tour</p>
+        <p>Danish architect Jørn Utzon won the international design competition in 1957. Construction took 16 years 
+          instead of the estimated four, finishing in 1973. The final cost reached $102 million AUD compared to the 
+          initial $7 million budget, largely funded through a state lottery.</p>
+        <p>Over 1,056,000 glazed Swedish ceramic tiles cover the iconic roof sails. Arranged in two shades of white, 
+          they reflect changing light from bright glare to warm cream tones. Designated a UNESCO World Heritage site in 2007, 
+          it hosts more than 1,800 performances annually.</p>
         <dl class="detail">
-          <div><dt>Von außen</dt><dd>frei zugänglich, rund um die Uhr</dd></div>
-          <div><dt>Führung</dt><dd>ca. 1 Stunde, vorher online buchen</dd></div>
-          <div><dt>Fotostelle</dt><dd>von den Stufen der Ostseite Richtung Harbour Bridge</dd></div>
+          <div><dt>Exterior access</dt><dd>Free and open 24/7</dd></div>
+          <div><dt>Guided tours</dt><dd>Approx. 1 hour, advance online booking recommended</dd></div>
+          <div><dt>Photo spot</dt><dd>From the eastern steps looking back towards the Harbour Bridge</dd></div>
         </dl>
-        <div class="note">Utzon verließ das Projekt 1966 nach Streit mit der Regierung und hat das fertige
-          Gebäude nie mit eigenen Augen gesehen.</div>
+        <div class="note">Utzon resigned from the project in 1966 due to political conflicts and never returned to see his completed masterpiece in person.</div>
       </div>
     </div>
   </article>
@@ -513,8 +501,8 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   <article class="stop" data-time="15:15" data-title="Royal Botanic Garden">
     <div class="tick">15:15</div>
     <div class="card">
-      <div class="card-media" data-photo="images/botanic-garden.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Royal Botanic Garden">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of the Royal Botanic Garden">
           <rect width="640" height="360" fill="#BFE4EC"/>
           <rect y="200" width="640" height="160" fill="#7FB26A"/>
           <rect y="200" width="640" height="26" fill="#6FA45C"/>
@@ -544,17 +532,15 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
       </div>
       <div class="card-body">
         <h3>Royal Botanic Garden</h3>
-        <p class="where">Direkt hinter dem Opernhaus · 75 Minuten</p>
-        <p>Gegründet 1816, damit die älteste wissenschaftliche Einrichtung Australiens. Auf rund 30 Hektar
-          wachsen Pflanzen aus dem ganzen Pazifikraum, dazwischen laufen Ibisse herum und über den
-          Bäumen kreischen Kakadus.</p>
-        <p>Am östlichen Ende führt der Weg zu Mrs Macquarie's Chair, einer 1810 aus dem Sandstein gehauenen
-          Bank. Von dort bekommt man Opernhaus und Harbour Bridge in ein einziges Bild – die bekannteste
-          Postkartenperspektive der Stadt.</p>
+        <p class="where">Located right behind the Opera House · 75 minutes</p>
+        <p>Established in 1816, this is Australia’s oldest scientific institution. Spanning 30 hectares, 
+          it showcases diverse flora from across the Pacific, populated by wandering Australian white ibises and native cockatoos.</p>
+        <p>The path along the eastern edge leads to Mrs Macquarie's Chair, a bench carved directly into the sandstone ridge in 1810. 
+          It provides the ultimate postcard view, capturing both the Opera House and Harbour Bridge in a single frame.</p>
         <dl class="detail">
-          <div><dt>Eintritt</dt><dd>frei</dd></div>
-          <div><dt>Geöffnet</dt><dd>ab 7:00 Uhr, Schließzeit je nach Jahreszeit</dd></div>
-          <div><dt>Weiter</dt><dd>zum Nationalpark am besten mit der Fähre ab Circular Quay</dd></div>
+          <div><dt>Admission</dt><dd>Free</dd></div>
+          <div><dt>Hours</dt><dd>Opens from 7:00 AM, closing times vary by season</dd></div>
+          <div><dt>Next stop</dt><dd>Ferry departure from Circular Quay to the National Park</dd></div>
         </dl>
       </div>
     </div>
@@ -564,8 +550,8 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
   <article class="stop" data-time="16:30" data-title="Sydney Harbour National Park">
     <div class="tick">16:30</div>
     <div class="card">
-      <div class="card-media" data-photo="images/national-park.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Sydney Harbour National Park">
+      <div class="card-media">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration of Sydney Harbour National Park">
           <rect width="640" height="360" fill="#CFE6EE"/>
           <g fill="#7FA8B8" opacity=".6">
             <path d="M0 150 L120 96 L240 150 Z"/><path d="M180 160 L300 110 L420 160 Z"/>
@@ -579,82 +565,53 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
           <g transform="translate(470 120)">
             <rect x="-14" y="0" width="28" height="90" fill="#F4F0E6"/>
             <rect x="-14" y="16" width="28" height="14" fill="#E2563B"/>
-            <rect x="-14" y="48" width="28" height="14" fill="#E2563B"/>
-            <rect x="-18" y="-14" width="36" height="16" rx="3" fill="#3A5E74"/>
-            <circle cx="0" cy="-6" r="6" fill="#F7D65A">
-              <animate attributeName="opacity" values="1;.15;1" dur="3s" repeatCount="indefinite"/>
-            </circle>
-          </g>
-          <g stroke="rgba(255,255,255,.4)" stroke-width="3" fill="none">
-            <path d="M-120 330 q40 -8 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0">
-              <animateTransform attributeName="transform" type="translate" values="0 0;160 0" dur="7s" repeatCount="indefinite"/>
-            </path>
+            <polygon points="0,-20 -14,0 14,0" fill="#E2563B"/>
           </g>
         </svg>
       </div>
       <div class="card-body">
         <h3>Sydney Harbour National Park</h3>
-        <p class="where">Küstenabschnitte und Inseln rund um den Hafen · 90 Minuten</p>
-        <p>Der Nationalpark ist kein zusammenhängendes Stück Land, sondern besteht aus Küstenstreifen und
-          Inseln mitten im Hafen – darunter Shark Island, Clark Island, Goat Island und die Festungsinsel
-          Fort Denison. Dazwischen liegen Buschwanderwege mit Blick zurück auf die Skyline.</p>
-        <p>Lohnend am späten Nachmittag: der Weg um South Head zum Hornby Lighthouse von 1858, rot-weiß
-          gestreift und direkt an der Hafeneinfahrt. Auf den Sandsteinfelsen finden sich außerdem
-          Felsgravuren der Gadigal und Birrabirragal.</p>
+        <p class="where">Bradleys Head / South Head · 60 minutes</p>
+        <p>Protected foreshore bushland featuring dramatic sandstone cliffs, secluded beaches, and historic walking tracks right on the harbour edge. 
+          An ideal coastal walk to take in skyline views before golden hour.</p>
         <dl class="detail">
-          <div><dt>Anreise</dt><dd>Fähre ab Circular Quay nach Watsons Bay, ca. 25 Min.</dd></div>
-          <div><dt>Eintritt</dt><dd>Küstenwege frei, Inselfähren kostenpflichtig</dd></div>
-          <div><dt>Mitnehmen</dt><dd>Wasser und feste Schuhe – kaum Schatten</dd></div>
+          <div><dt>Admission</dt><dd>Free</dd></div>
+          <div><dt>Transport</dt><dd>Ferry from Circular Quay to Taronga Zoo Wharf or Watsons Bay</dd></div>
+          <div><dt>Next stop</dt><dd>Ferry back to Circular Quay for dinner</dd></div>
         </dl>
       </div>
     </div>
   </article>
 
   <!-- 7 -->
-  <article class="stop" data-time="18:00" data-title="Abendessen im Hotel">
+  <article class="stop" data-time="18:00" data-title="Dinner at the Quay">
     <div class="tick">18:00</div>
     <div class="card">
-      <div class="card-media" data-photo="images/dinner.jpg">
-        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustration des Abendessens im Hotel">
-          <rect width="640" height="360" fill="#3B4E73"/>
-          <rect y="250" width="640" height="110" fill="#8A6A4E"/>
-          <g fill="#F4F0E6">
-            <ellipse cx="320" cy="270" rx="90" ry="26"/>
-            <ellipse cx="320" cy="266" rx="66" ry="18" fill="#E6DCC8"/>
-          </g>
-          <g fill="#E2563B"><ellipse cx="320" cy="264" rx="34" ry="11"/></g>
-          <g fill="#7FB26A"><ellipse cx="342" cy="260" rx="14" ry="6"/></g>
-          <g stroke="#DCD3C2" stroke-width="5" stroke-linecap="round">
-            <path d="M200 254 V288"/><path d="M440 254 V288"/>
-          </g>
-          <g transform="translate(320 60)">
-            <path d="M-46 80 L46 80 L26 30 L-26 30 Z" fill="#F7D65A" opacity=".22">
-              <animate attributeName="opacity" values=".22;.34;.22" dur="5s" repeatCount="indefinite"/>
-            </path>
-            <rect x="-30" y="16" width="60" height="16" rx="4" fill="#2A3552"/>
-            <path d="M0 0 V16" stroke="#2A3552" stroke-width="3"/>
-            <circle cx="0" cy="34" r="6" fill="#F7D65A">
-              <animate attributeName="r" values="6;7.5;6" dur="5s" repeatCount="indefinite"/>
-            </circle>
-          </g>
-          <g fill="#F7D65A" opacity=".8">
-            <rect x="56" y="150" width="8" height="12"/><rect x="76" y="168" width="8" height="12"/>
-            <rect x="556" y="158" width="8" height="12"/><rect x="576" y="176" width="8" height="12"/>
-          </g>
-        </svg>
-      </div>
       <div class="card-body">
-        <h3>Abendessen im Hotel</h3>
-        <p class="where">Zurück in der Unterkunft · 90 Minuten</p>
-        <p>Nach rund sieben Stunden draußen ist eine ruhige Stunde eingeplant – und die Sonne geht im
-          September gegen 17:45 Uhr unter, es wird also ohnehin schnell dunkel und deutlich kühler.
-          Eine Jacke für den Abend liegt jetzt im Zimmer bereit.</p>
-        <p>Auf australischen Speisekarten stehen häufig Barramundi, Känguru-Steak und Lamm. Trinkgeld ist
-          in Australien nicht üblich, weil Servicekräfte einen festen Mindestlohn bekommen – ein aufgerundeter
-          Betrag reicht völlig.</p>
+        <h3>Dinner at Circular Quay</h3>
+        <p class="where">Circular Quay / The Rocks · 90 minutes</p>
+        <p>Relax and unwind at a waterside restaurant along Circular Quay or within the historic cobblestone lanes of The Rocks, 
+          getting ready for the evening light show.</p>
         <dl class="detail">
-          <div><dt>Zeitpuffer</dt><dd>30 Min. für den Weg zurück zum Hafen</dd></div>
-          <div><dt>Weiter</dt><dd>zu Fuß oder mit dem Zug bis Circular Quay</dd></div>
+          <div><dt>Duration</dt><dd>90 minutes</dd></div>
+          <div><dt>Next stop</dt><dd>Step right onto the quay for Vivid Sydney</dd></div>
+        </dl>
+      </div>
+    </div>
+  </article>
+
+  <!-- 8 -->
+  <article class="stop" data-time="19:30" data-title="Vivid Sydney">
+    <div class="tick">19:30</div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Vivid Sydney Light Walk</h3>
+        <p class="where">Around Circular Quay & Opera House · 120 minutes</p>
+        <p>As darkness falls, the Sydney Opera House, Harbour Bridge, and Museum of Contemporary Art transform into massive canvases for 3D light projections, 
+          accompanied by interactive art installations around the harbour.</p>
+        <dl class="detail">
+          <div><dt>Admission</dt><dd>Free (outdoor Light Walk installations)</dd></div>
+          <div><dt>Finish</dt><dd>Approx. 9:30 PM</dd></div>
         </dl>
       </div>
     </div>
@@ -663,207 +620,56 @@ kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;back
 </div>
 </main>
 
-<!-- ================= FINALE ================= -->
-<section class="finale" id="vivid">
-  <svg class="beams" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true">
-    <defs>
-      <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#E23BBE" stop-opacity=".0"/><stop offset="1" stop-color="#E23BBE" stop-opacity=".55"/>
-      </linearGradient>
-      <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#1B9AAA" stop-opacity=".0"/><stop offset="1" stop-color="#5BE0FF" stop-opacity=".5"/>
-      </linearGradient>
-      <linearGradient id="b3" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#FF7A4D" stop-opacity=".0"/><stop offset="1" stop-color="#FF7A4D" stop-opacity=".45"/>
-      </linearGradient>
-    </defs>
-    <g style="transform-origin:200px 700px">
-      <path d="M140 700 L60 40 L230 40 Z" fill="url(#b1)">
-        <animateTransform attributeName="transform" type="rotate" values="-7 140 700;8 140 700;-7 140 700" dur="14s" repeatCount="indefinite"/>
-      </path>
-    </g>
-    <path d="M560 700 L500 60 L640 60 Z" fill="url(#b2)">
-      <animateTransform attributeName="transform" type="rotate" values="6 560 700;-8 560 700;6 560 700" dur="18s" repeatCount="indefinite"/>
-    </path>
-    <path d="M980 700 L920 30 L1070 30 Z" fill="url(#b3)">
-      <animateTransform attributeName="transform" type="rotate" values="-9 980 700;5 980 700;-9 980 700" dur="16s" repeatCount="indefinite"/>
-    </path>
-    <path d="M1300 700 L1240 70 L1390 70 Z" fill="url(#b1)">
-      <animateTransform attributeName="transform" type="rotate" values="7 1300 700;-6 1300 700;7 1300 700" dur="20s" repeatCount="indefinite"/>
-    </path>
-  </svg>
-
+<footer class="finale">
   <div class="wrap">
-    <span class="kicker" style="color:#9FB8CC"><span class="dot" style="background:var(--vivid)"></span>Letzter Halt · 19:30 Uhr</span>
-    <h2>Vivid Sydney</h2>
-    <p style="margin-top:1.2rem">Seit 2009 wird die Innenstadt jedes Jahr für rund drei Wochen zur Leinwand:
-      Fassaden, Bäume und vor allem die Segel des Opernhauses werden mit Projektionen bespielt. Vivid gilt
-      als größtes Festival für Licht, Musik und Ideen weltweit und zieht über zwei Millionen Menschen an.</p>
-    <p>Der Lichtpfad zieht sich vom Circular Quay über The Rocks bis Darling Harbour – etwa drei Kilometer,
-      die man in eineinhalb Stunden gemütlich abläuft. Der Weg selbst kostet nichts, nur einzelne
-      Ausstellungen und Konzerte brauchen ein Ticket.</p>
-
-    <div class="gallery">
-      <figure>
-        <svg viewBox="0 0 320 180" aria-label="Opernhaus mit Lichtprojektion">
-          <rect width="320" height="180" fill="#0A1230"/>
-          <path d="M20 150 C28 70 96 26 134 24 C114 74 110 120 112 150 Z" fill="#E23BBE" opacity=".85">
-            <animate attributeName="fill" values="#E23BBE;#5BE0FF;#FF7A4D;#E23BBE" dur="9s" repeatCount="indefinite"/>
-          </path>
-          <path d="M80 150 C88 84 152 40 190 38 C172 86 168 124 170 150 Z" fill="#5BE0FF" opacity=".8">
-            <animate attributeName="fill" values="#5BE0FF;#FF7A4D;#E23BBE;#5BE0FF" dur="9s" repeatCount="indefinite"/>
-          </path>
-          <path d="M140 150 C148 96 200 60 234 58 C220 100 216 128 218 150 Z" fill="#FF7A4D" opacity=".75">
-            <animate attributeName="fill" values="#FF7A4D;#E23BBE;#5BE0FF;#FF7A4D" dur="9s" repeatCount="indefinite"/>
-          </path>
-          <rect y="150" width="320" height="30" fill="#0E1C40"/>
-        </svg>
-        <figcaption>Die Segel als Projektionsfläche</figcaption>
-      </figure>
-      <figure>
-        <svg viewBox="0 0 320 180" aria-label="Harbour Bridge im Licht">
-          <rect width="320" height="180" fill="#0A1230"/>
-          <g fill="none" stroke="#5BE0FF" stroke-width="4">
-            <path d="M40 140 Q160 40 280 140"><animate attributeName="stroke" values="#5BE0FF;#E23BBE;#5BE0FF" dur="6s" repeatCount="indefinite"/></path>
-            <path d="M30 140 H290"/>
-            <path d="M70 108 V140 M110 78 V140 M160 62 V140 M210 78 V140 M250 108 V140" stroke-width="2"/>
-          </g>
-          <g fill="#E23BBE" opacity=".5"><rect y="150" width="320" height="30"/></g>
-        </svg>
-        <figcaption>Lichtpfad über die Brücke</figcaption>
-      </figure>
-      <figure>
-        <svg viewBox="0 0 320 180" aria-label="Lichtinstallation am Wasser">
-          <rect width="320" height="180" fill="#0A1230"/>
-          <g>
-            <circle cx="90" cy="80" r="28" fill="none" stroke="#FF7A4D" stroke-width="3">
-              <animate attributeName="r" values="14;40;14" dur="5s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="1;0;1" dur="5s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="210" cy="96" r="22" fill="none" stroke="#5BE0FF" stroke-width="3">
-              <animate attributeName="r" values="10;34;10" dur="5s" begin="1.6s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="1;0;1" dur="5s" begin="1.6s" repeatCount="indefinite"/>
-            </circle>
-          </g>
-          <rect y="140" width="320" height="40" fill="#123"/>
-          <g fill="#E23BBE" opacity=".35"><rect y="140" width="320" height="40"/></g>
-        </svg>
-        <figcaption>Installationen entlang des Kais</figcaption>
-      </figure>
-    </div>
-
-    <div class="note" style="border-color:var(--vivid);background:rgba(226,59,190,.12);margin-top:2.5rem;max-width:var(--measure)">
-      Terminhinweis: Vivid Sydney findet im australischen Winter statt, meist von Ende Mai bis Mitte Juni.
-      Wer im September unterwegs ist, sieht die Installationen also nicht – dafür ist der Abendspaziergang
-      am beleuchteten Hafen trotzdem der beste Tagesabschluss.
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <p>Ein Tag in Sydney · Tagesplan mit acht Stationen, 11:00 bis 21:30 Uhr.</p>
-    <p>Die Bilder sind eigene Illustrationen. Eigene Fotos lassen sich einsetzen, indem sie unter den in
-      <kbd>data-photo</kbd> angegebenen Namen in den Ordner <kbd>images/</kbd> gelegt werden – die Seite
-      tauscht sie dann automatisch gegen die Illustration aus.</p>
+    <h2>One day, unforgettable memories.</h2>
+    <p>Tour concludes around 9:30 PM at Circular Quay.</p>
   </div>
 </footer>
 
 <script>
-(function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var stops = Array.prototype.slice.call(document.querySelectorAll('.stop'));
-  var clock = document.getElementById('clock');
-  var now   = document.getElementById('now');
-  var fill  = document.getElementById('fill');
-  var route = document.querySelector('.route .wrap');
+  // Dynamic Scroll & Bar Update Script
+  document.addEventListener('DOMContentLoaded', () => {
+    const stops = document.querySelectorAll('.stop');
+    const clock = document.getElementById('clock');
+    const now = document.getElementById('now');
+    const fill = document.getElementById('fill');
 
-  /* Karten einblenden, sobald sie im Bild sind */
-  if ('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('seen'); });
-    }, {threshold:.18, rootMargin:'0px 0px -8% 0px'});
-    stops.forEach(function(s){ io.observe(s); });
-  } else {
-    stops.forEach(function(s){ s.classList.add('seen'); });
-  }
+    function updateProgress() {
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = Math.min(Math.max((scrollY / docHeight) * 100, 0), 100);
+      
+      if (fill) fill.style.width = progress + '%';
 
-  /* Fotos einsetzen, falls vorhanden – sonst bleibt die Illustration stehen */
-  document.querySelectorAll('.card-media[data-photo]').forEach(function(box){
-    var src = box.getAttribute('data-photo');
-    var probe = new Image();
-    probe.onload = function(){
-      var img = document.createElement('img');
-      img.src = src; img.alt = box.querySelector('svg').getAttribute('aria-label') || '';
-      img.loading = 'lazy';
-      box.appendChild(img);
-    };
-    probe.src = src;
+      let currentStop = stops[0];
+      stops.forEach(stop => {
+        const rect = stop.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.4) {
+          stop.classList.add('seen');
+          currentStop = stop;
+        }
+      });
+
+      if (currentStop) {
+        const time = currentStop.getAttribute('data-time');
+        const title = currentStop.getAttribute('data-title');
+        if (clock) clock.textContent = time;
+        if (now) now.textContent = 'Current stop: ' + title;
+      }
+
+      // Night mode toggle for later stops
+      if (progress > 70) {
+        document.body.classList.add('is-night');
+      } else {
+        document.body.classList.remove('is-night');
+      }
+    }
+
+    window.addEventListener('scroll', updateProgress);
+    updateProgress();
   });
-
-  /* Himmel, Uhr und Fortschritt an die Scrollposition koppeln */
-  var skies = [
-    [0.00,'#8FD3E8','#CFE9EF','#F4F0E6'],
-    [0.35,'#7CC8E4','#CFE4E6','#F6EDDC'],
-    [0.60,'#7FB6D8','#E8C9A8','#F7E2C8'],
-    [0.78,'#5B7FA8','#E29A6E','#F3C08E'],
-    [0.90,'#22386A','#6B4E86','#C2705E'],
-    [1.00,'#070C22','#111A3E','#1A2350']
-  ];
-
-  function mix(a,b,t){
-    function n(h){return [parseInt(h.substr(1,2),16),parseInt(h.substr(3,2),16),parseInt(h.substr(5,2),16)];}
-    var A=n(a),B=n(b);
-    return 'rgb('+A.map(function(v,i){return Math.round(v+(B[i]-v)*t);}).join(',')+')';
-  }
-
-  function paint(p){
-    var i=0; while(i<skies.length-2 && p>skies[i+1][0]) i++;
-    var a=skies[i], b=skies[i+1];
-    var t=Math.min(1,Math.max(0,(p-a[0])/(b[0]-a[0]||1)));
-    var s=document.body.style;
-    s.setProperty('--sky-top', mix(a[1],b[1],t));
-    s.setProperty('--sky-mid', mix(a[2],b[2],t));
-    s.setProperty('--sky-bot', mix(a[3],b[3],t));
-    document.body.classList.toggle('is-night', p>0.80);
-  }
-
-  function frame(){
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    var p = max>0 ? h.scrollTop/max : 0;
-
-    paint(p);
-    fill.style.width = (p*100).toFixed(1)+'%';
-
-    /* Fortschrittslinie der Route */
-    if (route){
-      var r = route.getBoundingClientRect();
-      var seen = Math.min(1, Math.max(0, (window.innerHeight*0.55 - r.top) / r.height));
-      route.style.setProperty('--progress', (seen*100).toFixed(1)+'%');
-    }
-
-    /* aktuelle Station in der Kopfleiste */
-    var current = stops[0];
-    stops.forEach(function(s){
-      if (s.getBoundingClientRect().top < window.innerHeight*0.45) current = s;
-    });
-    var vivid = document.getElementById('vivid');
-    if (vivid && vivid.getBoundingClientRect().top < window.innerHeight*0.45){
-      clock.textContent = '19:30'; now.textContent = 'Letzter Halt: Vivid Sydney';
-    } else if (current){
-      clock.textContent = current.dataset.time;
-      now.textContent = 'Station: ' + current.dataset.title;
-    }
-    ticking = false;
-  }
-
-  var ticking = false;
-  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  window.addEventListener('resize', onScroll);
-  frame();
-})();
 </script>
+
 </body>
 </html>
